@@ -1,0 +1,238 @@
+/* Custom styles for the Navbar */
+:root {
+    --primary-color: #A26028; /* Premium Gold color */
+    --dark-color: #1A1A1A;
+    --text-color: #333333;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Navbar General Styling */
+.custom-navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #eaeaea;
+    transition: all 0.3s ease;
+}
+
+/* Logo */
+.navbar-brand .logo-text {
+    font-weight: 800;
+    font-size: 1.8rem;
+    color: var(--dark-color);
+    letter-spacing: 1.5px;
+}
+
+.navbar-brand .logo-dot {
+    color: var(--primary-color);
+}
+
+/* Navigation Links */
+.nav-link {
+    color: var(--text-color) !important;
+    font-weight: 500;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 8px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--primary-color) !important;
+}
+
+/* Underline effect on hover */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: var(--primary-color);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after, .nav-link.active::after {
+    width: 100%;
+}
+
+/* Call to Action Button */
+.nav-cta-btn {
+    background-color: var(--dark-color);
+    color: #ffffff !important;
+    padding: 10px 25px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 2px solid var(--dark-color);
+    border-radius: 0; /* Square button for a modern/architectural look */
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.nav-cta-btn:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #ffffff !important;
+}
+
+/* Responsive toggle button */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 90vh; 
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(115, 111, 111, 0.179) 0%, rgba(0,0,0,0.4) 100%);
+    z-index: 0;
+}
+
+.hero-section .container {
+    z-index: 1;
+}
+
+.hero-title {
+    font-size: 72px;
+    font-weight: 900;
+    letter-spacing: 0cm;
+
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    opacity: 0.9;
+    max-width: 600px;
+}
+
+.text-primary-color {
+    color: var(--primary-color);
+}
+
+.btn-hero-primary {
+    background-color: var(--primary-color);
+    color: var(--dark-color);
+    padding: 15px 35px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid var(--primary-color);
+}
+
+.btn-hero-primary:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.btn-hero-secondary {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 15px 35px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid #ffffff;
+}
+
+.btn-hero-secondary:hover {
+    background-color: #ffffff;
+    color: var(--dark-color);
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    .hero-section {
+        height: 60vh;
+    }
+}
+
+.btn-voir-tout {
+    display: inline-block;
+    padding: 12px 32px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    text-transform: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.btn-voir-tout:hover {
+    background-color: #A26028;
+}
+
+.form-control-underline {
+    width: 100%;
+    background: transparent;      
+    border: none;                  
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);  
+    color: white;                  
+    padding: 8px 0;                
+    outline: none;                 
+}
+
+.form-control-underline:focus {
+    border-bottom-color: white;    
+}
+
+.parallax {
+    background-image: url("duplex.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-kitchen {
+    height: 700px;
+    background-image: url("kitchen.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 {
+    height: 500px; /* ajuste la hauteur */
+    background-image: url("pay.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH-KING. | Société de rénovation</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <!-- CSS d'AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- HEADER / NAVBAR --> 
+    <nav class="navbar navbar-expand-lg custom-navbar py-5 sticky-top">
+        <div class="container">
+            <!-- LOGO -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-2" style="color: var(--primary-color);">
+                    <path d="M3 10L12 3l9 7"></path>
+                    <path d="M5 10v11"></path>
+                    <path d="M19 10v11"></path>
+                    <path d="M15 13l-6 6"></path>
+                    <path d="M15 13l1.5-1.5a1.5 1.5 0 0 1 2 0v0a1.5 1.5 0 0 1 0 2L17 15"></path>
+                    <path d="M9 21h6"></path>
+                </svg>
+                <span class="logo-text">PH<span class="logo-dot">.king</span></span>
+            </a>
+            
+            <!-- MOBILE TOGGLE -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- LINKS -->
+            <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link " href="file:///C:/Users/AHIBO/Documents/IIT%20school%20%F0%9F%91%8C/html_css/Site%20WIX/index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="file:///C:/Users/AHIBO/Documents/IIT%20school%20%F0%9F%91%8C/html_css/Site%20WIX/index2.html">À Propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3 d-flex align-items-center">
+                        <span class="text-dark" style="font-size: 10px;">0576555962</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="py-5">
+        <div class="container-fluid px-0">
+            <div class="row g-0 mx-0" style="background-color: #2b2b2b;">
+                <!-- Partie gauche : informations -->
+                <div class="col-lg-5 text-white p-5 d-flex flex-column justify-content-center" data-aos="fade-right">
+                    <h1 class="fw-bold mb-4">Parlons ensemble de <br> votre prochain projet</h1> <br><br><br><br>
+                    <p class="mb-3">Contactez-nous pour réserver <br> une consultation gratuite.</p><br>
+                    <p class="mb-3"><i class="bi bi-geo-alt me-2"></i>Zone d'intervention : <br> Île-de-France, Normandie, Provence-Alpes Côte d'Azur</p> <br>
+                    <p class="mb-3"><i class="bi bi-telephone me-2"></i>47 rue des Couronnes 75020 Paris</p><br>
+                    <p class="mb-3"><i class="bi bi-envelope me-2"></i>info@monsite.fr</p><br>
+                    <p class="mb-0"><i class="bi bi-clock me-2"></i>01 23 45 67 89</p>
+                </div>
+
+                <!-- Partie droite : formulaire -->
+                <div class="col-lg-7 text-white p-5" data-aos="fade-left">
+                    <form>
+                        <div class="row mb-5">
+                            <div class="col-md-6 mb-4 mb-md-0">
+                                <label class="form-label-custom">Prénom <span>*</span></label>
+                                <input type="text" class="form-control-underline">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label-custom">Nom <span>*</span></label>
+                                <input type="text" class="form-control-underline">
+                            </div>
+                        </div>
+
+                        <div class="row mb-5">
+                            <div class="col-md-6 mb-4 mb-md-0">
+                                <label class="form-label-custom">E-mail <span>*</span></label>
+                                <input type="email" class="form-control-underline">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label-custom">Téléphone</label>
+                                <input type="tel" class="form-control-underline">
+                            </div>
+                        </div>
+
+                        <div class="mb-5">
+                            <label class="form-label-custom">Adresse</label>
+                            <input type="text" class="form-control-underline">
+                        </div>
+
+                        <div class="mb-5">
+                            <label class="form-label-custom">Objet</label>
+                            <input type="text" class="form-control-underline">
+                        </div>
+
+                        <div class="mb-5">
+                            <label class="form-label-custom">Rédigez votre message ici</label> <br><br><br><br><br>
+                            <input type="text" class="form-control-underline">
+                        </div>
+
+                        <button type="submit" class="btn-form-submit w-100" style="padding: 20px;">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container-fluid px-0">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.999!2d2.3795!3d48.8709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDcgUnVlIGRlcyBDb3Vyb25uZXMsIDc1MDIwIFBhcmlz!5e0!3m2!1sfr!2sfr" 
+            width="100%" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section> <br><br>
+
+    <footer class="py-4" style="background-color: #f4f4f4;">
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-between align-items-center mb-3 gap-3">
+                <div class="d-flex flex-wrap gap-4">
+                    <a href="#" class="text-decoration-none" style="color: #999;">Politique de cookies</a>
+                    <a href="#" class="text-decoration-none" style="color: #999;">Politique de confidentialité</a>
+                    <a href="#" class="text-decoration-none" style="color: #999;">Mentions légales</a>
+                </div>
+                <div class="d-flex gap-3">
+                    <a href="#" style="color: #1a1a1a; font-size: 1.25rem;"><i class="bi bi-facebook"></i></a>
+                    <a href="#" style="color: #1a1a1a; font-size: 1.25rem;"><i class="bi bi-twitter"></i></a>
+                    <a href="#" style="color: #1a1a1a; font-size: 1.25rem;"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+            <p class="mb-0" style="color: #999;">
+                © 2035 par M&amp;B Rénovation. Créé avec <a href="#" style="color: #999;">Wix.com</a>
+            </p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- JS DE Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
